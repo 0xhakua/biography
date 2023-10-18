@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Button</title>
+  <title>HashMap</title>
   <script src="scripts.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,18 +14,21 @@
   <nav id="nav">
     <ul>
     <li><a href="#">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Socials</a></li>
-    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="https://www.behance.net/neiljohnrivera">Socials</a></li>
+    <li><a href="https://www.behance.net/neiljohnrivera">Portfolio</a></li>
+    <li><a href="myform">Form</a></li>
   </ul> 
   </nav>
+
+  
 
   <div class="bio">
     <img src="me.png" class="me" title="This is me">
 
   <hr>
 
-  <h1>My Biography</h1>
+  <h1>About me</h1>
 
   <hr>
 
@@ -48,6 +51,81 @@
     day to enhance my skill and understand the techniques and stuff of graphics design.
   </p>
   </div>
+
+  <div class="myform" id="myform">
+   <fieldset>
+    <h1>Fill up the form!</h1>
+    <form action="action.php" method="POST" class="fill_up">
+      <label for="fname">Full Name</label>
+      <input type="text" name="fname" id="fname" placeholder="Alan Peter Cayetano" required>
+
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" placeholder="City of Mandaluyong" required>
+
+
+      <label for="bday">Birth Date</label>
+      <input type="date" name="bday" id="bday" placeholder="alan@petercayetano" required>
+
+
+      <label for="">Gender | </label>
+      
+      <label for="male">Male</label>
+      <input type="radio" id="male">
+      <label for="female">Female</label>
+      <input type="radio" id="female">
+
+
+      <label for="contact">Contact</label>
+      <input type="tel" name="contact" id="contact" placeholder="+01 2345 6789" required>
+
+
+      <label for="scode">Secret Code</label>
+      <input type="password" name="scode" id="scode" placeholder="1234" maxlength="4" required>
+
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="alan@petercayetano" required>
+
+
+      <label for="score">score</label>
+      <input type="number" name="score" id="score" placeholder="00" required min="0" max="99">
+      
+
+      <label for="captcha">Are you a robot?</label>
+      <input type="checkbox" name="captcha" id="captcha" required>
+
+
+      <label for="status">Status</label>
+      <select name="status" id="status" required>
+        <option value="Single">
+          Single
+        </option>
+          
+        <option value="Married">
+          Married
+        </option>
+
+        <option value="Divorced">
+          Divorced
+        </option>
+
+      </select>
+
+      
+     
+
+      
+      <div class="but">
+        <input type="reset" name="reset" id="reset">
+
+      <input type="submit" name="submit" id="submit">
+      </div>
+
+
+    </form>
+   </fieldset>
+  </div>
+
 
 </body>
 </html>
