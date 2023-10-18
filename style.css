@@ -7,7 +7,7 @@
 body{
   background-color: #0c255d;
   color: white;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -17,7 +17,12 @@ body{
 
 .bio {
   text-align: center;
-  font-weight: normal;
+  font-weight: 100;
+}
+
+.landing {
+  background-color: white;
+  width: 100%;
 }
 
 button {
@@ -69,5 +74,22 @@ nav a {
 
 nav a:hover{
   color: #0c255d;
+  
+}
+
+.myform {
+  margin-top: 20%;
+  font-weight: 100;
+  text-align: center;
+
+}
+
+input {
+  margin: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4vh;
+  padding: 0.7vh 1vh 0.7vh 1vh
   
 }
