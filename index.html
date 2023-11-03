@@ -3,129 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HashMap</title>
-  <script src="scripts.js" defer></script>
   <link rel="stylesheet" href="style.css">
+  <title>Neil John Rivera | BSIT-2B</title>
 </head>
 <body>
-  <button id="btn" title="burger button">
+
+  <!--<img src="https://images4.alphacoders.com/680/680597.png" alt="background" class="background">-->
+
+  
+
+
+  <header>
+    <a href="#" class="logo" title = "your's truly">Neil<span>Dev.</span></a>
+  </header>
+
+  <button class="nav_button" id="btn" title="burger button">
     ☰
   </button>
   <nav id="nav">
     <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="https://www.behance.net/neiljohnrivera">Socials</a></li>
-    <li><a href="https://www.behance.net/neiljohnrivera">Portfolio</a></li>
-    <li><a href="myform">Form</a></li>
+    <li><a href="#section-1">Home</a></li>
+    <li><a href="#section-2">About</a></li>
+    <li><a href="#section-3">Form</a></li>
+    <li><a href="#section-4">Socials</a></li>
+    <li><a href="#section-5">Portfolio</a></li>
+    
   </ul> 
   </nav>
 
+  <!--This is the landing page section-->
+  <section id="section-1" class="section-1">
+    
+  <div class="landing-page">
+    <img src="https://github.com/njerivera27/biography/blob/main/viper_img.png?raw=true" alt="" class="viper_pic" title="viper from valorant">
+
+    <p class="hero-text">
+      Transform Ideas Into Designs.
+    </p>
+
+    <p class="hero-sub">
+      <q><i>Let us turn your thoughts into art! </i></q> Bring your ideas to life with creative designs that capture attention and inspire. Stand out in the bustling market with tailored services that leave a lasting impression. Let your vision shine with our unique approach and expertise."
+      
+    </p>
+
+  </div>
+</section>
+
+  <!--This is the about me page section-->
+<section id="section-2" class="section-2">
+   <div class="about-section" id="form-section">
+    <div class="bio">
+      
+      <!--<img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.6435-9/156145684_1053039235225328_4423319200815985514_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFWuAUKDGiRuiDRH3jXjVmHNtPpfu6v7qI20-l-7q_uolauwPfpMBsx70cJlcbeHFLxzdDAFjHrrwtbXXcB4M2m&_nc_ohc=gs0JzeXkwXwAX9vBj90&_nc_ht=scontent-mnl1-2.xx&oh=00_AfC9TFLduHBC8Vg82-Jiuzv3Up9gV1lcVQuf6q8qrrwUUw&oe=65687269" class="me" title="This is me">-->
   
+  
+    <h1>About me</h1>
+  
+    <hr>
+    </div>
+    
+    <article title = "intro" class="about_me">
+      &ensp; Hi, my name is <b>Neil John Rivera</b>,
+      19-year-old college student living in add. I am pursuing Bachelor of Science in Information
+      Techonology here in <abbr title="">CTU</abbr> - Barili Campus. I usaully wake up <time>7:00 am</time> in the morning and always end up being late.
+      I'm a game addict that I usually spend my time playing video games.
+    </article>
+ 
+    <p title = "ending" class="about_me">
+      &ensp; Since I'm an IT student, I would like to develop my own game
+      someday when I learn more about programming and its different langauges needed.
+      But sometimes, I doubt if i'd be able to become a programmer/developer since
+      I easily forgets and I lack confidence to be one. If IT carrer is not for me,
+      I would pursue my second choice, which is graphic designing. I started getting
+      hooked up with graphic design a year ago after seeing designs that really catches
+      attention to viewers and audience. So I tried it for my self and practices every
+      day to enhance my skill and understand the techniques and stuff of graphics design.
+    </p>
+   </div>
+</section>
 
-  <div class="bio">
-    <img src="me.png" class="me" title="This is me">
+    <!--This is the form page section-->
+<section id="section-3" class="section-3">
+   <div class="form-section">
 
-  <hr>
-
-  <h1>About me</h1>
-
-  <hr>
-
-  <p title = "intro">
-    Hi, my name is Neil John Rivera,
-    19-year-old college student living in San Rafael,
-    Barili, Cebu. I am pursuing Bachelor of Science in Information
-    Techonology here in CTU - Barili Campus.
-    I'm a game addict that I usually spend my time playing video games.
-  </p>
-
-  <p title = "ending">
-    Since I'm an IT student, I would like to develop my own game
-    someday when I learn more about programming and its different langauges needed.
-    But sometimes, I doubt if i'd be able to become a programmer/developer since
-    I easily forgets and I lack confidence to be one. If IT carrer is not for me,
-    I would pursue my second choice, which is graphic designing. I started getting
-    hooked up with graphic design a year ago after seeing designs that really catches
-    attention to viewers and audience. So I tried it for my self and practices every
-    day to enhance my skill and understand the techniques and stuff of graphics design.
-  </p>
-  </div>
-
-  <div class="myform" id="myform">
-   <fieldset>
-    <h1>Fill up the form!</h1>
-    <form action="action.php" method="POST" class="fill_up">
-      <label for="fname">Full Name</label>
-      <input type="text" name="fname" id="fname" placeholder="Alan Peter Cayetano" required>
-
-      <label for="address">Address</label>
-      <input type="text" name="address" id="address" placeholder="City of Mandaluyong" required>
-
-
-      <label for="bday">Birth Date</label>
-      <input type="date" name="bday" id="bday" placeholder="alan@petercayetano" required>
-
-
-      <label for="">Gender | </label>
-      
-      <label for="male">Male</label>
-      <input type="radio" id="male">
-      <label for="female">Female</label>
-      <input type="radio" id="female">
-
-
-      <label for="contact">Contact</label>
-      <input type="tel" name="contact" id="contact" placeholder="+01 2345 6789" required>
-
-
-      <label for="scode">Secret Code</label>
-      <input type="password" name="scode" id="scode" placeholder="1234" maxlength="4" required>
-
-
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="alan@petercayetano" required>
-
-
-      <label for="score">score</label>
-      <input type="number" name="score" id="score" placeholder="00" required min="0" max="99">
-      
-
-      <label for="captcha">Are you a robot?</label>
-      <input type="checkbox" name="captcha" id="captcha" required>
-
-
-      <label for="status">Status</label>
-      <select name="status" id="status" required>
-        <option value="Single">
-          Single
-        </option>
-          
-        <option value="Married">
-          Married
-        </option>
-
-        <option value="Divorced">
-          Divorced
-        </option>
-
-      </select>
-
-      
-     
-
-      
-      <div class="but">
-        <input type="reset" name="reset" id="reset">
-
-      <input type="submit" name="submit" id="submit">
-      </div>
-
-
+    <h1>User Survey Form</h1>
+    
+   <div class="container">
+    <h3>Personal Information</h3>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="login-username">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Alan Peter" required>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Cayetano" required>
+        </div>
     </form>
-   </fieldset>
+
+    <h3>Contact Information</h3>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="login-username">Email</label>
+            <input type="email" name="email" id="email" placeholder="alan@petercayetano" required>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Contact Number</label>
+            <input type="contact" name="contact" id="contact" placeholder="+63 (XXX) YYY ZZZZ" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Address</label>
+          <input type="address" name="address" id="address" placeholder="City of Mandaluyong, Philippines" required>
+      </div>
+      <input type="submit" class="submit"></input>
+    </form>
+    
+    
+</div>
+</div>
+</section>
+
+ <!--This is the socials page section-->
+<section id="section-4" class="section-4">
+
+  <div class="socials_section">
+    <h1>SOCIALS</h1>
+    <p>comming soon...</p>
   </div>
 
+</section>
+
+
+ <!--This is the portfolio page section-->
+<section id="section-5" class="section-5">
+
+  <div class="portfolio_section">
+    <h1>PORTFOLIO</h1>
+    <p>comming soon...</p>
+  </div>
+  
+  <fieldset>
+    <pre>More contents coming soon... Stay tuned and chill.</pre>
+
+    <progress>
+      50%
+    </progress>
+
+    <source><sup>50% </sup><sub><small>Work in progress.</small></sub>
+
+  </fieldset>
+
+</section>
+
+<script>const btn = document.getElementById('btn');
+  const nav = document.getElementById('nav');
+  
+  btn.addEventListener('click', ()  =>  {
+    nav.classList.toggle('active');
+    btn.classList.toggle('active');
+  });
+
+  const navigation = 
+    document.querySelector(".primary-navigation");
+  
+  const navigationHeight =
+    navigation.offsetHeight;
+
+    document.documentElement.style.setProperty(
+      "--scroll-padding",
+      navigationHeight + "px"
+    );
+
+  </script>
 
 </body>
 </html>
