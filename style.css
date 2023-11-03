@@ -43,9 +43,128 @@ body{
   
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 100;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 25vh;
+}
+
+.img-info {
+  width: 100%;
+}
+
+.img-viper {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 10vh;
+  min-height: 100vh;
+  }
+
+  .img-info {
+    width: 100%;
+    float: right;
+  }
+
+  .img-info h1 {
+   font-size: 30px;
+   margin-top: 5%;
+   margin-left: 30%;
+  }
+
+  .img-info p {
+   margin-right: 0;
+   text-align: justify;
+
+  }
+
+  .img-viper {
+    width: 60%;
+    padding-right: 5vh;
+    float: left;
+    
+  }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    
+  }
+
+  .img-info {
+    width: 100%;
+    float: right;
+  }
+
+  .img-info h1 {
+   font-size: 30px;
+   margin-top: 20%;
+   margin-left: 30%;
+  }
+
+  .img-info p {
+   margin-right: 0;
+   font-size: 16px
+  }
+
+  .img-viper {
+    width: 50%;
+    float: left;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
+
+  .img-info {
+    width: 100%;
+    float: right;
+  }
+
+  .img-info h1 {
+   font-size: 30px;
+   margin-top: 20%;
+   margin-left: 30%;
+  }
+
+  .img-info p {
+   margin-right: 0;
+   font-size: 18px
+  }
+
+  .img-viper {
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+  }
+}
+
 fieldset {
   background-color: #222629;
   opacity: 0.5;
+  position: static;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .background {
@@ -84,43 +203,11 @@ hr {
   
 }
 
-.landing-page {
-  margin-bottom: 30vh;
-  margin-top: 10vh;
-}
+
 
 .name {
   color: #86c232;
   margin-left: 55vh;
-}
-
-.viper_pic {
-  margin-left: 0;
-  width: 50vh;
-  height: 50vh;
-  object-fit: fill;
-  position: absolute;
-  -webkit-animation: introLoad 1s forwards;
-  animation: introLoad 2s forwards;
- }
-
- .hero-text {
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 4rem;
-  margin-left: 55vh;
-  margin-top: 5vh;
-  text-justify: inter-word
-}
-
-.hero-sub {
- 
-  margin-left: 55vh;
-  text-align: justify;
-  text-justify: auto;
-  font-weight: 100;
-  color: #ffffff;
-  text-justify: inter-word;
 }
 
 
@@ -128,14 +215,12 @@ h5 {
   margin: 0;
 }
 
-
-
-
-
 .about-section {
+  display: inline-block;
   text-align: center;
   font-weight: 100;
-  margin-bottom: 25vh;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
 }
 
 
@@ -200,8 +285,8 @@ nav a:hover{
 }
 
 .form-section {
-  margin-bottom: 25vh;
-  margin-top: 20%;
+  margin-bottom: 20vh;
+  margin-top: 10%;
   font-weight: 100;
  
 }
@@ -283,7 +368,7 @@ input.submit:hover {
 .portfolio_section {
  text-align: center;
   font-weight: 100;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
 }
 
 
